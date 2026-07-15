@@ -18,12 +18,12 @@ export default function Home() {
 
         {/* Hero Central Content */}
         <div className={styles.heroContent}>
-          {/* Background Name Text */}
-          <div className={styles.titleWrapper}>
-            <h1 className={styles.title}>ai.adhil</h1>
+          {/* Background Name Text (Filled Layer) */}
+          <div className={`${styles.titleWrapper} ${styles.titleBg}`}>
+            <h1 className={styles.titleFilled}>ai.adhil</h1>
           </div>
 
-          {/* Grayscale Portrait Layer */}
+          {/* Transparent Portrait Layer */}
           <div className={styles.portraitWrapper}>
             <Image
               src="/photo.png"
@@ -34,6 +34,11 @@ export default function Home() {
               className={styles.portrait}
               sizes="(max-width: 768px) 100vw, 600px"
             />
+          </div>
+
+          {/* Foreground Name Text (Outline Layer) */}
+          <div className={`${styles.titleWrapper} ${styles.titleFg}`}>
+            <h1 className={styles.titleOutline} aria-hidden="true">ai.adhil</h1>
           </div>
         </div>
 

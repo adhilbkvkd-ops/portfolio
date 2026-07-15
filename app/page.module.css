@@ -120,11 +120,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
   pointer-events: none;
 }
 
-.title {
+.titleBg {
+  z-index: 1;
+}
+
+.titleFg {
+  z-index: 3;
+}
+
+.titleFilled,
+.titleOutline {
   font-family: var(--font-display);
   font-size: clamp(5.5rem, 21vw, 18.5rem);
   font-weight: 900;
@@ -132,11 +140,19 @@
   white-space: nowrap;
   line-height: 0.8;
   letter-spacing: -0.06em;
-  color: var(--text-primary);
   pointer-events: auto;
   user-select: none;
   width: 100%;
   padding: 0 1rem;
+}
+
+.titleFilled {
+  color: var(--text-primary);
+}
+
+.titleOutline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--text-primary);
 }
 
 /* Footer Section */
@@ -243,10 +259,15 @@
     max-width: 100%;
   }
 
-  .title {
+  .titleFilled,
+  .titleOutline {
     font-size: clamp(3.5rem, 16vw, 7.5rem);
     font-weight: 900;
     letter-spacing: -0.06em;
+  }
+
+  .titleOutline {
+    -webkit-text-stroke: 1.2px var(--text-primary);
   }
 
   .footer {
