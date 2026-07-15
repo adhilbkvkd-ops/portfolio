@@ -12,7 +12,7 @@ export default function Home() {
           <nav className={styles.navLinks}>
             <a href="#about" className={styles.navLink}>About</a>
             <a href="#projects" className={styles.navLink}>Projects</a>
-            <a href="#contact" className={styles.navLink}>Contact</a>
+            <a href="https://wa.me/qr/F6JLFZZICZA7P1" target="_blank" rel="noopener noreferrer" className={styles.navLink}>Contact</a>
           </nav>
         </header>
 
