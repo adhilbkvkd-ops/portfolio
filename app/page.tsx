@@ -35,11 +35,6 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw, 600px"
             />
           </div>
-
-          {/* Foreground Name Text (Outline Layer) */}
-          <div className={`${styles.titleWrapper} ${styles.titleFg}`}>
-            <h1 className={styles.titleOutline} aria-hidden="true">ai.adhil</h1>
-          </div>
         </div>
 
         {/* Footer Area */}
