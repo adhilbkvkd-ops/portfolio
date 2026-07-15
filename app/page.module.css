@@ -152,7 +152,7 @@
 
 .titleOutline {
   color: transparent;
-  -webkit-text-stroke: 1.5px var(--text-primary);
+  -webkit-text-stroke: 1.5px #ffffff;
 }
 
 /* Footer Section */
@@ -267,7 +267,7 @@
   }
 
   .titleOutline {
-    -webkit-text-stroke: 1.2px var(--text-primary);
+    -webkit-text-stroke: 1.2px #ffffff;
   }
 
   .footer {
